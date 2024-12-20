@@ -39,9 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles', 
     'tasks.apps.TasksConfig' , # Tasks TODO  
     'account.apps.AccountConfig' , # add base python 
+    'manager.apps.ManagerConfig' , # this is manager from apps 
+    "debug_toolbar", # this is debug toolbar for debugger
+ 
 
     
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware' , # this is django midel warae  
 ]
 
 ROOT_URLCONF = 'Paja.urls'
@@ -125,3 +130,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_URL = "static/"
+
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = 'media/'

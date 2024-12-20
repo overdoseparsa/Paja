@@ -1,3 +1,2 @@
 from django.db import models
-
-# Create your models here.
+# this is for auhtcation from post uses
