@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles', 
-    'tasks.apps.TasksConfig' , # Tasks TODO  
     'account.apps.AccountConfig' , # add base python 
     'manager.apps.ManagerConfig' , # this is manager from apps 
     "debug_toolbar", # this is debug toolbar for debugger
